@@ -1,0 +1,19 @@
+{
+  "name": "resolution-",
+  "version": "1.0.0",
+  "description": "jeux de choix de résolution annuelle",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/helene-monnier/resolution.git"
+  },
+  "author": "Helene Monnier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helene-monnier/resolution/issues"
+  },
+  "homepage": "https://github.com/helene-monnier/resolution#readme"
+}

@@ -1,0 +1,57 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-height: 100vh;
+  max-height: 100vh;
+  font-family: sans-serif;
+}
+
+#containerResolution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ff8882;
+  height: 80vh;
+  color: #fff;
+  font-size: calc(1em + 1vw);
+  line-height: 1.5em;
+}
+
+#containerActive {
+  flex: 1;
+  margin: 2em;
+  border: solid .15em #ff8882;
+  display: flex;
+  flex-direction: column;
+  color: #ff8882;
+  text-align: center;
+  font-size: calc(1em + 1vw);
+  font-weight: 500;
+}
+
+h1 {
+  margin: 1em auto;
+}
+
+p {
+  width: 90%; /* Utilisation d'une largeur relative */
+  max-width: 60em; /* Limite la largeur maximale pour éviter une lecture difficile sur les grands écrans */
+  margin: auto;
+}
+
+#button {
+  line-height: 10vh;
+  border: none;
+  border-top: solid .15em #ff8882;
+  color: #ff8882;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: calc(.7em + 1vw);
+}
+
+#button:hover {
+  background-color: #ff8882;
+  color:#fff
+}
