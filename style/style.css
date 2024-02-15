@@ -22,7 +22,7 @@
 #containerActive {
   flex: 1;
   margin: 2em;
-  border: solid .15em #ff8882;
+  border: solid .1em #ff8882;
   display: flex;
   flex-direction: column;
   color: #ff8882;
@@ -36,7 +36,7 @@ h1 {
 }
 
 p {
-  width: 90%; /* Utilisation d'une largeur relative */
+  width: 80%; /* Utilisation d'une largeur relative */
   max-width: 60em; /* Limite la largeur maximale pour éviter une lecture difficile sur les grands écrans */
   margin: auto;
 }
@@ -44,11 +44,12 @@ p {
 #button {
   line-height: 10vh;
   border: none;
-  border-top: solid .15em #ff8882;
+  border-top: solid .1em #ff8882;
   color: #ff8882;
   background-color: #fff;
   text-transform: uppercase;
   font-size: calc(.7em + 1vw);
+  animation: animate 4s linear infinite;
 }
 
 #button:hover {

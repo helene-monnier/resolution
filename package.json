@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/helene-monnier/resolution/issues"
   },
-  "homepage": "https://github.com/helene-monnier/resolution#readme"
+  "homepage": "https://github.com/helene-monnier/resolution#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

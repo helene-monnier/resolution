@@ -1,3 +1,4 @@
+// import resolutions from ('../data/resolutions');
 
 const app = {
   init: () => {
@@ -45,7 +46,5 @@ const app = {
   },
 
 }
-
-
 
 document.addEventListener('DOMContentLoaded', app.init)
