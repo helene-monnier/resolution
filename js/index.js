@@ -1,99 +1,82 @@
-// import resolutions from ('../data/resolutions');
-const resolutions = [
+const pranks = [
   {
       id: 1,
-      texte: 'Collectionner les chaussettes orphelines et organiser une cérémonie annuelle pour leur rendre hommage.'
+      text: 'Aller dans les paramètres de l\'ordi et inverser le sens de l\'écran.'
   },
   {
       id: 2,
-      texte: 'Devenir un expert en jonglage avec des objets de la vie quotidienne.'
+      text: 'Modifier la disposition des icones du bureau.'
   },
   {
       id: 3,
-      texte: 'Savoir jouer la Valse d’Amélie au piano.'
+      text: 'Modifier la langue du clavier.'
   },
   {
       id: 4,
-      texte: 'Organiser une compétition de chasse aux trésors dans ma ville, avec des énigmes cachées dans les endroits les plus insolites.'
+      text: 'Un petit bout de scotch sur la lentille de la souris. Classique mais efficace.'
   },
   {
       id: 5,
-      texte: 'Apprendre quelque chose de nouveau chaque mois.'
+      text: 'Modifier l\icône du pointeur.'
   },
   {
       id: 6,
-      texte: 'Consacrer du temps à la méditation ou à la pleine conscience'
+      text: 'Faire du pixel art sur les fenêtres avec des post-it.'
   },
   {
       id: 7,
-      texte: 'Lire au moins un livre par mois pour nourrir mon esprit.'
+      text: 'Modifier la disposition des bureaux dans l\open space.'
   },
   {
       id: 8,
-      texte: 'Réduire ma consommation de viande.'
+      text: 'Créez de faux "tickets de stationnement" avec des montants exorbitants et placez-les sous les essuie-glaces des voitures de vos collègues. Faites attention aux détails pour qu\'ils aient l\'air bien réels '
   },
   {
       id: 9,
-      texte: 'Organiser une soirée cinéma en regardant uniquement des films des années 80 en mangeant des snacks cosmiques.'
+      text: 'Proposer un afterwork pour fêter la fin de semaine et ne pas venir.'
   },
   {
       id: 10,
-      texte: 'Avoir un setup incroyable.'
+      text: 'Avoir un setup de dev avec un clavier qwerty et un écran azerty.'
   },
   {
       id: 11,
-      texte: 'Développer une application mobile pour traduire les miaulements de mon chat en messages codés.'
+      text: 'Commenter tout le code avec des blagues de dev.'
   },
   {
       id: 12,
-      texte: 'Faire un projet d’apothéose qui déchire.'
+      text: 'Dire "Okayyy" à chaque fois que quelqu\'un dit "OK" dans une conversation.'
   },
   {
       id: 13,
-      texte: 'Créer un portfolio pour présenter mes compétences'
-  },
-  {
-      id: 14,
-      texte: 'Participer à des hackathons pour résoudre des problèmes technologiques intéressants.'
-  },
-  {
-      id: 15,
-      texte: 'Suivre des cours en ligne pour me tenir au courant des dernières tendances et technologies.'
-  },
-  {
-      id: 16,
-      texte: 'Obtenir mon titre pro'
-  },
-  {
-      id: 17,
-      texte: 'Trouver une entreprise sympa pour faire CDA en contrat de pro'
-  },
+      text: 'Demander au client d\ajouter des fonctionnalités inutiles.'
+  }
 ];
 
 const app = {
   init: () => {
     app.container = document.querySelector("#app");
 
-    app.containerResolution();
+    app.containerPrank();
     app.containerActive();
     app.h1Elm();
     app.buttonElm();
   },
 
-  containerResolution: () => {
-    app.containerReso = document.createElement('div');
-    app.containerReso.id = 'containerResolution';
-    app.container.append(app.containerReso)
+  containerPrank: () => {
+    app.containerP = document.createElement('div');
+    app.containerP.id = 'containerPrank';
+    app.container.append(app.containerP)
   },
 
-  resolution: () => {
-    const randomIndex = Math.floor(Math.random() * resolutions.length);
-    const randomResolution = resolutions[randomIndex];
-    app.resolutionElm = document.createElement('p');
-    app.resolutionElm.textContent = randomResolution.texte;
-    app.resolutionElm.classList.add('resolution-item'); 
-    parentElm = document.querySelector('#containerResolution');
-    parentElm.append(app.resolutionElm);
+  prank: () => {
+    const randomIndex = Math.floor(Math.random() * pranks.length);
+    const randomPrank = pranks[randomIndex];
+    app.prankElm = document.createElement('p');
+    app.prankElm.textContent = randomPrank.text;
+    app.prankElm.classList.add('prank-item'); 
+    parentElm = document.querySelector('#containerPrank');
+    parentElm.append(app.prankElm);
   },
 
   containerActive: () => {
@@ -104,7 +87,7 @@ const app = {
 
   h1Elm: () => {
     app.h1Elm = document.createElement('h1');
-    app.h1Elm.textContent = 'Découvre ta nouvelle résolution';
+    app.h1Elm.textContent = 'En rade d\'idée pour le 1er avril ?';
     parentElm = document.querySelector('#containerActive');
     parentElm.append(app.h1Elm);
   },
@@ -112,16 +95,16 @@ const app = {
   buttonElm: () => {
     app.buttonElm = document.createElement('button');
     app.buttonElm.id = 'button';
-    app.buttonElm.textContent = 'Résolution';
+    app.buttonElm.textContent = 'Cliquer ici pour une blague !';
     parentElm = document.querySelector('#containerActive');
     parentElm.append(app.buttonElm);
 
     // écouteur d'évent au click sur le button
     app.buttonElm.addEventListener('click', () => {
-      if (app.resolutionElm) {
-        app.resolutionElm.remove();
+      if (app.prankElm) {
+        app.prankElm.remove();
       }
-      app.resolution();
+      app.prank();
     })
   },
 

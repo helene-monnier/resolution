@@ -1,38 +1,44 @@
 :root {
   --color-vivid: #187484;
+  --color-light: #EEF5FF;
+
+}
+
+body {
+  background-color: var(--color-light);
+  text-align: center;
 }
 
 #app {
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
-  min-height: 100vh;
-  max-height: 100vh;
-  font-family: sans-serif;
+  height: 100vh;
+  min-width: 50%;
   margin: 0 auto;
+  font-family: sans-serif;
   border: solid .1em var(--color-vivid);
 }
 
-#containerResolution {
+#containerPrank {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   background-color: var(--color-vivid);
   height: 80vh;
-  color: #fff;
+  color: var(--color-light);
   font-size: calc(1em + 1vw);
   line-height: 1.5em;
+  font-family: "Handlee", cursive;
 }
 
 #containerActive {
   flex: 1;
   margin: 2em;
-  border: solid .1em var(--color-vivid);
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: var(--color-vivid);
-  text-align: center;
   font-size: calc(1em + 1vw);
   font-weight: 500;
 }
@@ -42,24 +48,25 @@ h1 {
 }
 
 p {
-  width: 80%; /* Utilisation d'une largeur relative */
-  max-width: 60em; /* Limite la largeur maximale pour éviter une lecture difficile sur les grands écrans */
+  width: 80%;
+  max-width: 60em;
   margin: auto;
 }
 
 #button {
-  line-height: 10vh;
   border: none;
-  border-top: solid .1em var(--color-vivid);
+  border: solid .1em var(--color-vivid);
+  border-radius: 2em;
+  padding: 0.5em;
   color: var(--color-vivid);
-  background-color: #fff;
+  background-color: var(--color-light);
   text-transform: uppercase;
-  font-size: calc(.7em + 1vw);
+  font-size: calc(.5em + 1vw);
 }
 
 #button:hover {
   background-color: var(--color-vivid);
-  color:#fff;
+  color: var(--color-light);
   cursor: pointer;
   transition: 500ms;
 }
