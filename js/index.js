@@ -17,7 +17,7 @@ const pranks = [
   },
   {
       id: 5,
-      text: 'Modifier l\icône du pointeur.'
+      text: 'Modifier l\'icône du pointeur.'
   },
   {
       id: 6,
@@ -25,7 +25,7 @@ const pranks = [
   },
   {
       id: 7,
-      text: 'Modifier la disposition des bureaux dans l\open space.'
+      text: 'Modifier la disposition des bureaux dans l\'open space.'
   },
   {
       id: 8,
@@ -33,23 +33,19 @@ const pranks = [
   },
   {
       id: 9,
-      text: 'Proposer un afterwork pour fêter la fin de semaine et ne pas venir.'
+      text: 'Mettre le clavier en qwerty.'
   },
   {
       id: 10,
-      text: 'Avoir un setup de dev avec un clavier qwerty et un écran azerty.'
-  },
-  {
-      id: 11,
       text: 'Commenter tout le code avec des blagues de dev.'
   },
   {
-      id: 12,
+      id: 11,
       text: 'Dire "Okayyy" à chaque fois que quelqu\'un dit "OK" dans une conversation.'
   },
   {
-      id: 13,
-      text: 'Demander au client d\ajouter des fonctionnalités inutiles.'
+      id: 12,
+      text: 'Demander au client d\'ajouter des fonctionnalités inutiles. Attention à ne pas lui donner de mauvaises idées toutefois ... '
   }
 ];
 
